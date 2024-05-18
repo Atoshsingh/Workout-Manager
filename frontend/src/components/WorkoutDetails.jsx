@@ -8,7 +8,7 @@ const WorkoutDetails = ({ workout }) => {
     const handleClick = async () => {
         console.log("delete button called! ")
 
-        const response = await fetch('http://localhost:4000/api/workout/' + workout._id, {
+        const response = await fetch('https://task-manager-backend-1-5oai.onrender.com/api/workout/' + workout._id, {
             method: 'DELETE'
         })
         const json = await response.json();

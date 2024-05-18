@@ -8,7 +8,7 @@ const Home=()=> {
     useEffect(() => {
         
         const fetchWorkouts = async () => {
-            const response = await fetch('http://localhost:4000/api/workout',{
+            const response = await fetch('https://task-manager-backend-1-5oai.onrender.com/api/workout',{
                 method: "GET"
             })
             const json = await response.json()

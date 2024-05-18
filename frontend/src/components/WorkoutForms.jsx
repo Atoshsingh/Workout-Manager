@@ -10,7 +10,7 @@ function WorkoutForms(){
     const handleSubmit = async (e) =>{
         e.preventDefault();
         const workout = {title , load , reps };
-        const response =await fetch('http://localhost:4000/api/workout' ,{
+        const response =await fetch('https://task-manager-backend-1-5oai.onrender.com/api/workout' ,{
             method:"POST",
             body:JSON.stringify(workout),
             headers:{
